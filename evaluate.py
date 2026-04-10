@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 import numpy as np
 import os
 import sys
-from Resnet import ResNet54, Bottleneck
+from models.ResNet import ResNet54, Bottleneck
 
 # 1. 環境設置
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"

@@ -2,7 +2,7 @@ import torch
 import time
 import os
 import sys
-from Resnet import ResNet54
+from models.ResNet import ResNet54
 
 def benchmark_pruned():
     device = torch.device("cpu")

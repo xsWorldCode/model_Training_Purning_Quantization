@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
-from Resnet import ResNet54
+from models.ResNet import ResNet54
 import time
 import os
 import sys
@@ -187,7 +187,7 @@ class Trainer:
             'optimizer_state_dict': self.optimizer.state_dict(),
             'val_acc': val_acc,
             'classes': self.classes
-        }, os.path.join(save_dir, 'final_model.pth'))
+        }, os.path.join(save_dir, 'model.pth'))
         
         print(f"\n训练完成！最佳验证准确率: {best_acc:.2f}%")
         
